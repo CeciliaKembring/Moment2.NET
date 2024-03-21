@@ -1,4 +1,28 @@
+@model Moment2NET.Models.DataModel;
 @{
-
+ ViewData["title"] = "Data"; 
 }
-<h2>Data</h2>
+<h2>Utflyktsmål</h2>
+<p>Lägg till ett utflyktsmål</p>
+
+
+<form method="post">
+    
+    <div class="inputs">
+    <label asp-for="Name"></label><br>
+    <input asp-for="Name"><br>
+    </div>
+
+    <div class="inputs">
+    <label asp-for="Address"></label><br>
+    <input asp-for="Address"><br>
+    </div>
+
+    <div class="inputs">
+    <label asp-for="Kilometers"></label><br>
+    <input asp-for="Kilometers"><br>
+    </div>
+
+    <input type="submit" class="btn" value="Lägg till utflyktsmål">
+
+</form>

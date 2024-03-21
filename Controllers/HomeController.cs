@@ -11,8 +11,8 @@ public class HomeController : Controller
     public IActionResult Info() {
         return View(); 
     }
-
     public IActionResult Data() {
         return View(); 
     }
+
 }
