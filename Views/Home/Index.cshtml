@@ -1,4 +1,17 @@
 @{
  ViewData["title"] = "Startsida"; 
 }
-<h2>Start</h2>
+<h2>Utflyktsmål</h2>
+<p>På denna sida kan du se och lägga till dina favorit utflyktsmål.</p>
+
+<div>
+<div class="partial-btn">
+    @await Html.PartialAsync("_Buttons")
+</div>
+
+<div class="partial-img">
+@await Html.PartialAsync("_Image")
+</div>
+
+
+</div>

@@ -45,13 +45,13 @@ body {
 
   /* Form */
   form{
-    width: 400px;
+    width: 450px;
     height: auto;
     padding: 30px;
     border: solid black 1px;
     border-radius: 10px;
   }
-  form input{
+  form input, .input{
     width: 100%;
     padding: 8px;
     border-radius: 5px;
@@ -62,15 +62,76 @@ body {
   }
  .btn{
   width: auto;
-  padding: 5px;
+  padding: 9px;
   margin-top: 20px;
-  background-color: rgb(94, 141, 94);
+  background-color: rgb(136, 192, 136);
   cursor: pointer;
  }
  .btn:hover{
-  background-color: rgb(45, 86, 45);
+  background-color: rgb(106, 159, 106);
+ }
+ .error{
+  color: red;
  }
 
+ .radio-label {
+  display: inline-block;
+  width: 50px;
+  text-align: left; 
+  margin-right: 10px; 
+}
+
+ /* Table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+  background-color: #767171; 
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd; 
+}
+
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #e3e0e0;
+}
+
+
+/* Buttons, start */
+.start-btn{
+  padding: 20px; 
+  width: 200px;
+  margin-right: 10px;
+  background-color: #d7d4d4;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+.start-btn:hover{
+  background-color: rgb(243, 241, 241);
+}
+.partial-btn{
+  margin-top: 60px;
+}
+
+/* Image */
+.image img{
+  width: 300px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.partial-img{
+  margin-top: 60px;;
+}
 
 
   /* Footer */
@@ -103,6 +164,9 @@ body {
     nav ul li {
       margin-bottom: 0;
       margin-left: 20px;
+    }
+    .image img{
+      width: 600px;
     }
   }
   

@@ -7,21 +7,47 @@
 
 
 <form method="post">
+    <div asp-validation-summary="ModelOnly"></div>
     
     <div class="inputs">
-    <label asp-for="Name"></label><br>
-    <input asp-for="Name"><br>
+        <span asp-validation-for="Name" class="error"></span><br>
+        <label asp-for="Name"></label><br>
+        <input asp-for="Name"><br>
     </div>
 
     <div class="inputs">
-    <label asp-for="Address"></label><br>
-    <input asp-for="Address"><br>
+        <span asp-validation-for="Address" class="error"></span><br>
+        <label asp-for="Address"></label><br>
+        <input asp-for="Address"><br>
     </div>
 
     <div class="inputs">
-    <label asp-for="Kilometers"></label><br>
-    <input asp-for="Kilometers"><br>
+        <span asp-validation-for="Kilometers" class="error"></span><br>
+        <label asp-for="Kilometers"></label><br>
+        <input asp-for="Kilometers"><br>
     </div>
+
+ <div class="inputs">
+        <label asp-for="Category"></label><br>
+        <select asp-for="Category" class="input">
+            <option value="Natur">Natur</option>
+            <option value="Stad">Stad</option>
+            <option value="Strand">Strand</option>
+        </select>
+    </div>
+
+<div class="inputs">
+    <label asp-for="Visited"></label><br>
+    <input type="radio" id="visitedYes" name="Visited" value="Ja">
+    <label for="visitedYes" class="radio-label">Ja</label>
+    <input type="radio" id="visitedNo" name="Visited" value="Nej">
+    <label for="visitedNo" class="radio-label">Nej</label>
+</div>
+
+
+
+
+
 
     <input type="submit" class="btn" value="Lägg till utflyktsmål">
 
