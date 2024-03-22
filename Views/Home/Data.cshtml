@@ -12,19 +12,13 @@
     <div class="inputs">
         <span asp-validation-for="Name" class="error"></span><br>
         <label asp-for="Name"></label><br>
-        <input asp-for="Name"><br>
+        <input asp-for="Name" class="input"><br>
     </div>
 
     <div class="inputs">
         <span asp-validation-for="Address" class="error"></span><br>
         <label asp-for="Address"></label><br>
-        <input asp-for="Address"><br>
-    </div>
-
-    <div class="inputs">
-        <span asp-validation-for="Kilometers" class="error"></span><br>
-        <label asp-for="Kilometers"></label><br>
-        <input asp-for="Kilometers"><br>
+        <input asp-for="Address" class="input"><br>
     </div>
 
  <div class="inputs">
@@ -38,16 +32,11 @@
 
 <div class="inputs">
     <label asp-for="Visited"></label><br>
-    <input type="radio" id="visitedYes" name="Visited" value="Ja">
+    <input type="radio" id="visitedYes" name="Visited" value="true">
     <label for="visitedYes" class="radio-label">Ja</label>
-    <input type="radio" id="visitedNo" name="Visited" value="Nej">
+    <input type="radio" id="visitedNo" name="Visited" value="false">
     <label for="visitedNo" class="radio-label">Nej</label>
 </div>
-
-
-
-
-
 
     <input type="submit" class="btn" value="Lägg till utflyktsmål">
 

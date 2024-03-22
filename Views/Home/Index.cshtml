@@ -1,10 +1,11 @@
 @{
  ViewData["title"] = "Startsida"; 
 }
-<h2>Utflyktsmål</h2>
+<h2>@ViewData["Message"]</h2>
 <p>På denna sida kan du se och lägga till dina favorit utflyktsmål.</p>
 
-<div>
+
+<div class="partial">
 <div class="partial-btn">
     @await Html.PartialAsync("_Buttons")
 </div>
@@ -12,6 +13,13 @@
 <div class="partial-img">
 @await Html.PartialAsync("_Image")
 </div>
+</div>
 
-
+<div class="info-box">
+<button id="show-info-btn">Visa info om momentet</button>
+<div id="info-box">
+    <p>Momentet går ut på att skapa en applikation genom att använda MVC.</p>
+    <p>Applikationen ska ha minst tre separate views och man ska kunna skicka data från kontrollern och vyn.</p>
+    <p>Man ska även kunna spara data så att den kan inhämtas i en separat sida.</p>
+</div>
 </div>

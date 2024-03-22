@@ -15,9 +15,6 @@ app.UseStaticFiles();
 app.UseRouting();
 
 // Routing
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}"
-);
+app.MapDefaultControllerRoute();
 
 app.Run();

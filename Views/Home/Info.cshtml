@@ -1,38 +1,35 @@
-@model List<Moment2NET.Models.DataModel>
 @{
-  ViewData["title"] = "Info"; 
+    ViewData["title"] = "Info"; 
 }
 <h2>Tabell över utflyktsmål</h2>
 
 <table>
-  <thead>
-    <tr>
-      <th>Namn</th>
-      <th>Adress</th>
-      <th>Kilometer</th>
-      <th>Kategori</th>
-      <th>Besökt</th>
-    </tr>
-  </thead>
-  <tbody>
-    @foreach(var data in Model) {
-      <tr>
-        <td>@data.Name</td>
-        <td>@data.Address</td>
-        <td>@data.Kilometers</td>
-        <td>@data.Category</td>
-         <td>
-            @if(data.Visited) {
-                <span>Ja</span>
-            } else {
-                <span>Nej</span>
-            }
-      </tr>
-    }
-  </tbody>
+    <thead>
+        <tr>
+            <th>Namn</th>
+            <th>Adress</th>
+            <th>Kategori</th>
+            <th>Besökt</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var data in ViewBag.Data) {
+            <tr>
+                <td>@data.Name</td>
+                <td>@data.Address</td>
+                <td>@data.Category</td>
+                <td>
+                    @if(data.Visited) {
+                        <span>Ja</span>
+                    } else {
+                        <span>Nej</span>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
 </table>
 
 <div class="partial-img">
-@await Html.PartialAsync("_Image")
+    @await Html.PartialAsync("_Image")
 </div>
-

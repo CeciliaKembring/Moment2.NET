@@ -52,14 +52,25 @@ body {
     border-radius: 10px;
   }
   form input, .input{
-    width: 100%;
     padding: 8px;
-    border-radius: 5px;
     border: solid grey 1px;
   }
-  .inputs{
-    margin-top: 10px;
+  .input{
+    width: 400px;
   }
+  .inputs {
+    margin-top: 10px;
+}
+
+.inputs label, .inputs input[type="radio"] {
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+.inputs input[type="radio"] {
+    margin-right: 5px;
+}
+
  .btn{
   width: auto;
   padding: 9px;
@@ -74,12 +85,6 @@ body {
   color: red;
  }
 
- .radio-label {
-  display: inline-block;
-  width: 50px;
-  text-align: left; 
-  margin-right: 10px; 
-}
 
  /* Table */
 table {
@@ -103,6 +108,10 @@ tr:nth-child(even) {
   background-color: #e3e0e0;
 }
 
+/* Partial */
+.partial{
+  margin-top: 100px;
+}
 
 /* Buttons, start */
 .start-btn{
@@ -118,7 +127,10 @@ tr:nth-child(even) {
   background-color: rgb(243, 241, 241);
 }
 .partial-btn{
-  margin-top: 60px;
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 /* Image */
@@ -130,7 +142,27 @@ tr:nth-child(even) {
   margin: 0 auto;
 }
 .partial-img{
-  margin-top: 60px;;
+  margin-top: 20px;;
+}
+
+/* js */
+#info-box{
+  display: none;
+}
+#show-info-btn{
+  padding: 5px;
+  background-color: rgb(114, 141, 114);
+  cursor: pointer;
+}
+#show-info-btn:hover{
+  background-color: #d7d4d4;
+  }
+.info-box{
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  width: 400px;
+flex-direction: column;
 }
 
 
